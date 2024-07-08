@@ -1,26 +1,20 @@
-**Бот голосовой ассистент**
+# Telegram Voice & Text Assistant Bot
 
-Бот выполняет функцию внимательного и дружелюбного ассистента, 
-с которым можно обсуждать важные вопросы хоть каждый день. 
+### Features
 
-На текстовые сообщения бот отвечает текстовыми, на аудио - аудио,
-только не забудьте об ограничениях в токенах!
-Помимо базовых функций (старт, помощь, сам диалог), 
-в боте реализована возможность отладочного режима.
+- YandexGPT API assistant for everyday questions and tasks (with special system for limited tokens)
+- Replies with a voice or text message
+- Separate stt and tts functions 
+- Debug mode for logs checking
 
+### Usage
 
-В папке можно найти все необходимые файлы, а именно:
-+ bot.py
-+ speechkit.py
-+ database.py
-+ config.py
-+ creds.py
-+ yandex_gpt.py
-+ validators.py
-+ requirements.txt
-+ README.md
-+ logs.txt
-+ messages.db
-+ iam_token.txt
-+ folder_id.txt
-+ bot_token.txt
+- Create and clone repo from this repository
+- Create config files from samples:
+```bash
+cp bot_token.txt.sample bot_token.txt
+cp folder_id.txt.sample folder_id.txt
+cp iam_token.txt.sample iam_token.txt
+```
+- Install requirements from requirements.txt
+- Run bot via `python bot.py`
